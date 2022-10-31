@@ -631,7 +631,7 @@ parse_args <- function(sys_calls,
           upd_output("df_label",  NA_character_)
         }
       } else {
-        parse_data_str(deparse(calls$fun[[var]]))
+        parse_data_str(paste(deparse(calls$fun[[var]]), collapse = " "))
       }
     }
   }
